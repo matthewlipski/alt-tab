@@ -1,11 +1,12 @@
 from setuptools import setup
 
-APP = ['main.py']  # points to your main python file
+APP = ['src/main.py']  # points to your main python file
 DATA_FILES = []
 OPTIONS = {
     'iconfile': 'assets/icon.icns',
     'packages': ['Quartz', 'pynput'],  # include your other dependencies here
     'plist': {
+        'LSUIElement': True,
         'LSBackgroundOnly': True
     }
 }
