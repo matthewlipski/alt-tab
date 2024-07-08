@@ -1,22 +1,20 @@
+#!/usr/bin/env python3
+
 from setuptools import setup
 
-APP = ['src/main.py']  # points to your main python file
-DATA_FILES = []
-OPTIONS = {
-    'iconfile': 'assets/icon.icns',
-    'packages': ['Quartz', 'pynput'],  # include your other dependencies here
-    'plist': {
-        'LSUIElement': True,
-        'LSBackgroundOnly': True
-    }
-}
-
 setup(
-    app=APP,
-    data_files=DATA_FILES,
-    name="AltTab",
+    app=['src/main.py'],
+    data_files=[],
+    name="Optab",
     options={
-        'py2app': OPTIONS
+        'py2app': {
+            'iconfile': 'assets/icon.icns',
+            'packages': ['Quartz', 'pynput'],
+            'plist': {
+                'LSUIElement': True,
+                'LSBackgroundOnly': True
+            }
+        }
     },
     setup_requires=['py2app'],
     version="1.0"
