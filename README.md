@@ -1,18 +1,18 @@
-# AltTab for macOS
-![AltTab Icon](./assets/icon512.png)
+# Optab for macOS
+![Optab Icon](./assets/icon.png)
 
 ## Usage
-This simple app allows for using the Alt+Tab hotkey to trigger the macOS app switching menu as well as the existing Cmd+Tab hotkey. The app runs entirely in the background, and does not add any menu bar or dock icons. Exiting requires finding AltTab in Activity Monitor and closing it from there. To run AltTab on startup, simply add it the the login items in System Preferences.
+This simple app allows for using the Option+Tab hotkey to trigger the macOS app switching menu as well as the existing Cmd+Tab hotkey. The app runs entirely in the background, and does not add any menu bar or dock icons. Exiting requires finding Optab in Activity Monitor and closing it from there. To run Optab on startup, simply add it to the login items in System Preferences.
 
-AltTab can be downloaded [here](https://github.com/matthewlipski/alt-tab/releases/tag/v1.0).
+Optab can be downloaded [here](https://github.com/matthewlipski/alt-tab/releases/tag/v1.1).
 
 ## Building from source
-To build AltTab from source, you must first install the required packages using `pip`, either to a virtual environment or to your global site-packages:
+To build Optab from source, first ensure you have Python 3.12 or higher installed. Then, run `init.sh` to initialize the virtual environment and install the required dependencies:
 ```
-pip install -r requirements.txt
+source init.sh
 ```
-To generate AltTab.app, run the following command:
+To build Optab and generate a `.app` executable, run `build.sh`:
 ```
-python setup.py py2app
+source build.sh
 ```
-This will create two new directories, `build`, and `dist`. AltTab.app will be located in the `dist` directory.
+Once complete, you can find the `Optab.app` executable in the `dist` directory.
