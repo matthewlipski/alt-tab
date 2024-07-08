@@ -17,5 +17,5 @@ setup(
         }
     },
     setup_requires=['py2app'],
-    version="1.2"
+    version="1.1"
 )
