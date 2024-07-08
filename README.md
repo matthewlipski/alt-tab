@@ -11,9 +11,8 @@ To build AltTab from source, you must first install the required packages using 
 ```
 pip install -r requirements.txt
 ```
-To generate AltTab.app, run the following commands:
+To generate AltTab.app, run the following command:
 ```
-cd src
 python setup.py py2app
 ```
 This will create two new directories, `build`, and `dist`. AltTab.app will be located in the `dist` directory.
